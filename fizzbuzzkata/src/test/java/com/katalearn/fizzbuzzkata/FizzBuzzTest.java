@@ -30,5 +30,13 @@ public class FizzBuzzTest {
 		String result = fizzbuzz.getFizzBuzzValue(input);
 		assertEquals("Fizz", result);
 	}
+	
+	@Test
+	public void testGetFizzBuzzValue_inputNumIsMultipleOf3_returnsFizz() {
+
+		int input = 12;
+		String result = fizzbuzz.getFizzBuzzValue(input);
+		assertEquals("Fizz", result);
+	}
 
 }
