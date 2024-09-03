@@ -6,6 +6,9 @@ import org.junit.Test;
 public class FizzBuzzTest {
 
 	FizzBuzz fizzbuzz = new FizzBuzz();
+	private static final String FIZZ = "Fizz";
+	private static final String BUZZ = "Buzz";
+	private static final String FIZZBUZZ = "FizzBuzz";
 	
 	@Test
 	public void testGetFizzBuzzValue_inputNumIs0_returns0() {
@@ -28,7 +31,7 @@ public class FizzBuzzTest {
 
 		int input = 3;
 		String result = fizzbuzz.getFizzBuzzValue(input);
-		assertEquals("Fizz", result);
+		assertEquals(FIZZ, result);
 	}
 	
 	@Test
@@ -36,7 +39,7 @@ public class FizzBuzzTest {
 
 		int input = 12;
 		String result = fizzbuzz.getFizzBuzzValue(input);
-		assertEquals("Fizz", result);
+		assertEquals(FIZZ, result);
 	}
 	
 	@Test
@@ -44,7 +47,7 @@ public class FizzBuzzTest {
 
 		int input = 5;
 		String result = fizzbuzz.getFizzBuzzValue(input);
-		assertEquals("Buzz", result);
+		assertEquals(BUZZ, result);
 	}
 	
 	@Test
@@ -52,7 +55,7 @@ public class FizzBuzzTest {
 
 		int input = 50;
 		String result = fizzbuzz.getFizzBuzzValue(input);
-		assertEquals("Buzz", result);
+		assertEquals(BUZZ, result);
 	}
 	
 	@Test
@@ -60,7 +63,7 @@ public class FizzBuzzTest {
 
 		int input = 30;
 		String result = fizzbuzz.getFizzBuzzValue(input);
-		assertEquals("FizzBuzz", result);
+		assertEquals(FIZZBUZZ, result);
 	}
 
 }
