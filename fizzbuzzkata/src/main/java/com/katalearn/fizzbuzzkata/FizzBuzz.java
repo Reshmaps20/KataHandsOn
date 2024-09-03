@@ -4,7 +4,7 @@ public class FizzBuzz {
 
 	public String getFizzBuzzValue(int num) {
 		
-		return "0";
+		return String.valueOf(num);
 	}
 
 }
