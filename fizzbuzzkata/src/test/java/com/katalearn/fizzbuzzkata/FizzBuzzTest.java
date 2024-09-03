@@ -46,5 +46,21 @@ public class FizzBuzzTest {
 		String result = fizzbuzz.getFizzBuzzValue(input);
 		assertEquals("Buzz", result);
 	}
+	
+	@Test
+	public void testGetFizzBuzzValue_inputNumIsMultipleOf5_returnsBuzz() {
+
+		int input = 50;
+		String result = fizzbuzz.getFizzBuzzValue(input);
+		assertEquals("Buzz", result);
+	}
+	
+	@Test
+	public void testGetFizzBuzzValue_inputNumIsMultipleOf3And5_returnsFizzBuzz() {
+
+		int input = 30;
+		String result = fizzbuzz.getFizzBuzzValue(input);
+		assertEquals("FizzBuzz", result);
+	}
 
 }
