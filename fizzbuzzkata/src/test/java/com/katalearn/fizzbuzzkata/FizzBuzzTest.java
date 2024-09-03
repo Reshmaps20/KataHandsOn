@@ -38,5 +38,13 @@ public class FizzBuzzTest {
 		String result = fizzbuzz.getFizzBuzzValue(input);
 		assertEquals("Fizz", result);
 	}
+	
+	@Test
+	public void testGetFizzBuzzValue_inputNumIs5_returnsBuzz() {
+
+		int input = 5;
+		String result = fizzbuzz.getFizzBuzzValue(input);
+		assertEquals("Buzz", result);
+	}
 
 }
