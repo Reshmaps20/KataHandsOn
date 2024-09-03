@@ -13,5 +13,14 @@ public class FizzBuzzTest {
 		String result = fizzbuzz.getFizzBuzzValue(input);
 		assertEquals("0", result);
 	}
+	
+	@Test
+	public void testGetFizzBuzzValue_inputNumIs1_returns1() {
+
+		int input = 1;
+		FizzBuzz fizzbuzz = new FizzBuzz();
+		String result = fizzbuzz.getFizzBuzzValue(input);
+		assertEquals("1", result);
+	}
 
 }
