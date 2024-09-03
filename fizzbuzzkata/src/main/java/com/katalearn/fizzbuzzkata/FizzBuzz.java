@@ -7,17 +7,12 @@ public class FizzBuzz {
 
 	public String getFizzBuzzValue(int num) {
 
-		StringBuilder result = new StringBuilder();
-
 		if (num == 0)
 			return String.valueOf(num);
 
-		if (isMultipleOf3(num))
-			result.append(FIZZ);
-		if (isMultipleOf5(num))
-			result.append(BUZZ);
+		String result = (isMultipleOf3(num) ? FIZZ : "") + (isMultipleOf5(num) ? BUZZ : "");
 
-		return result.length() > 0 ? result.toString() : String.valueOf(num);
+		return result.length() > 0 ? result : String.valueOf(num);
 	}
 
 	private boolean isMultipleOf5(int num) {
